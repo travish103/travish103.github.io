@@ -8,6 +8,7 @@
 html{
     background-color: lightblue;
 }
+
 /* navstuff */
 .mainNav ul {
     display: flex;
@@ -43,23 +44,26 @@ html{
     font-weight: bold;
     font-family: cursive;
     font-size: 30px;
+    min-width: 250px;
 }
 .mainNav ul li:hover {
     text-decoration: underline;
 }
-
 .mainNav ul li .active {
     background-image: url("/photo/animatedSun.svg");
     background-repeat: no-repeat;
-    background-size: 46% auto;
+    background-size: 80% auto;
     background-position: center;
     border-radius: 10px;
-    color: black;
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
     /*background-color: cyan;*/
 }
 /* endnavstuff */
-
-
 
 /* headSection*/
 .homehead{
@@ -75,13 +79,11 @@ html{
     width:300px;
     background-color: azure;
 }
-
 .welcometo{
     text-align: center;
     font-weight: bold;
     padding-top: 50px;
 }
-
 .taniti{
     text-align: center;
     font-size: 50px;
@@ -110,8 +112,7 @@ html{
 }
 /*endheadSection*/
 
-
-
+/*heroSection*/
 .homeActivities > div{
     display: flex;
     flex-direction: column;
@@ -132,7 +133,6 @@ html{
     border-bottom: 10px solid rgba(240, 128, 128, 0.67);
 
 }
-
 .title{
     height: 80px;
     display: flex;
@@ -143,7 +143,6 @@ html{
     text-shadow: 1px 1px 1px #06bdff; /*maybe*/
 
 }
-
 .homeActivities img{
     width:100%;
     min-width: 100%;
@@ -151,7 +150,6 @@ html{
     min-height:200px;
     object-fit: cover;
 }
-
 .actDescript{
     margin-top: auto;
     text-align: center;
@@ -159,11 +157,7 @@ html{
     margin-bottom: 100px;
 
 }
-
-.activity1 img,
-.activity2 img ,
-.activity3 img,
-.activity4 img{
+.activity1 img,.activity2 img ,.activity3 img, .activity4 img{
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -182,6 +176,9 @@ html{
 .activity4 img{
     flex:4;
 }
+/*endHero*/
+
+/*footArea*/
 .weather{
     display: flex;
     flex-direction: row;
@@ -216,7 +213,91 @@ html{
     background-size: cover;
     background-position: center;
     border-radius: 10px;
+    max-width: 1500px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+}
+footer{
+    margin-top: 20px;
+    padding-bottom: 80px;
+    border-top: 3px solid black;
+    background-color: #cedde7;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    gap:100px;
+    justify-content: center;
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+    align-items: center;
+}
+/*endfootArea*/
 
-    z-index: auto;
 
+/*BOOKFORM*/
+
+/*FORM*/
+.contactForm {
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.consultation h2, .consultation p, .consultation button {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.contactForm {
+    border-top: 5px solid black;
+    margin: 0 auto;
+    text-align: center;
+    font-size: x-large;
+    /*text-shadow: #BDBDBD 3px 3px 3px;*/
+}
+
+.consultation {
+    margin: auto;
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 30px;
+    padding: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: x-large;
+
+}
+
+.contactForm input {
+    width: 100%;
+}
+
+.consultation label {
+    text-align: right;
+}
+
+.consultation .submitButton {
+    margin: auto;
+    font-size: x-large;
+    width: 30%;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.consultation .submitButton:hover {
+    border: 3px solid green;
+}
+
+.contactForm .Happy {
+    margin: auto;
+    width: 50%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: xx-large;
+    color: var(--fourthGray);
 }
