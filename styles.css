@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*outline: 1px solid red;*/
+    /*background-color: lightblue;*/
+}
+html{
+    background-color: lightblue;
+}
+/* navstuff */
+.mainNav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    justify-content: center;
+    max-width: 1500px;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 10px solid rgba(240, 128, 128, 0.35);
+    padding-bottom: 10px;
+
+}
+.mainNav ul li {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-top: 10px;
+    height:50px;
+    text-align: center;
+    flex: 1;
+    border-radius: 10px;
+    list-style: none;
+    color: black;
+}
+.mainNav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 30px;
+}
+.mainNav ul li:hover {
+    text-decoration: underline;
+}
+
+.mainNav ul li .active {
+    background-image: url("/photo/animatedSun.svg");
+    background-repeat: no-repeat;
+    background-size: 46% auto;
+    background-position: center;
+    border-radius: 10px;
+    color: black;
+    /*background-color: cyan;*/
+}
+/* endnavstuff */
+
+
+
+/* headSection*/
+.homehead{
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-bottom: 10px solid rgba(240, 128, 128, 0.35);
+
+}
+.logo{
+    font-size: 40px;
+    height: 300px;
+    width:300px;
+    background-color: azure;
+}
+
+.welcometo{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+.taniti{
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+    padding: 30px;
+    font-style: italic;
+}
+.islandlandscape{
+    flex:1;
+    background-image: url(/photo/DockbeachLandscape.jpg);
+    background-size:auto;
+    background-position: center;
+    display: flex;
+    height:300px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 80px;
+    font-family: cursive;
+    text-shadow: 2px 2px 2px black ;
+    text-align: center;
+}
+.islandlandscape p{
+    min-width: 1000px;
+/*    find min setting taht keeps from multilining*/
+}
+/*endheadSection*/
+
+
+
+.homeActivities > div{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+.homeActivities{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+    padding-top: 80px;
+    border-bottom: 10px solid rgba(240, 128, 128, 0.67);
+
+}
+
+.title{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px #06bdff; /*maybe*/
+
+}
+
+.homeActivities img{
+    width:100%;
+    min-width: 100%;
+    height:200px;
+    min-height:200px;
+    object-fit: cover;
+}
+
+.actDescript{
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 100px;
+
+}
+
+.activity1 img,
+.activity2 img ,
+.activity3 img,
+.activity4 img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+
+}
+.activity1 img{
+    flex:1;
+}
+.activity2 img{
+    flex:2;
+}
+.activity3 img{
+    flex:3;
+}
+.activity4 img{
+    flex:4;
+}
+.weather{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 4px solid black;
+    padding:20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    text-decoration: underline;
+
+}
+.weather img{
+    max-width: 150px;
+    max-height: 150px;
+    padding-right: 50px;
+}
+.weatherVals{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    font-size: 30px;
+    font-family: cursive;
+
+}
+.footPhoto{
+    height: 250px;
+    background-image: url("/photo/overheadBeach.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
+    z-index: auto;
+
+}
