@@ -75,9 +75,11 @@ html{
 }
 .logo{
     font-size: 40px;
-    height: 300px;
+    height: 200px;
     width:300px;
     background-color: azure;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .welcometo{
     text-align: center;
@@ -97,7 +99,7 @@ html{
     background-size:auto;
     background-position: center;
     display: flex;
-    height:300px;
+    height:200px;
     align-items: center;
     justify-content: center;
     color: white;
@@ -105,6 +107,7 @@ html{
     font-family: cursive;
     text-shadow: 2px 2px 2px black ;
     text-align: center;
+    margin-top: 20px;
 }
 .islandlandscape p{
     min-width: 1000px;
@@ -159,7 +162,7 @@ html{
 }
 .activity1 img,.activity2 img ,.activity3 img, .activity4 img{
     width: 100%;
-    height: 300px;
+    min-height: 280px;
     object-fit: cover;
     display: block;
 
@@ -236,28 +239,23 @@ footer{
 }
 /*endfootArea*/
 
-
-/*BOOKFORM*/
-
-/*FORM*/
+/*BOOKINGFORM*/
 .contactForm {
     margin: 0 auto;
     padding: 50px 0;
+    max-width: 1500px;
+    min-width: 900px;
 }
-
 .consultation h2, .consultation p, .consultation button {
     grid-column: span 2;
     text-align: center;
 }
-
 .contactForm {
     border-top: 5px solid black;
     margin: 0 auto;
     text-align: center;
     font-size: x-large;
-    /*text-shadow: #BDBDBD 3px 3px 3px;*/
 }
-
 .consultation {
     margin: auto;
     width: 50%;
@@ -267,18 +265,15 @@ footer{
     padding: 30px;
     border: 3px solid black;
     border-radius: 10px;
-    font-size: x-large;
+    font-size: xx-large;
 
 }
-
 .contactForm input {
     width: 100%;
 }
-
 .consultation label {
     text-align: right;
 }
-
 .consultation .submitButton {
     margin: auto;
     font-size: x-large;
@@ -288,16 +283,149 @@ footer{
     align-items: center;
     border-radius: 10px;
 }
-
 .consultation .submitButton:hover {
     border: 3px solid green;
 }
+/*ENDBOOKINGFORM*/
 
-.contactForm .Happy {
-    margin: auto;
-    width: 50%;
-    margin-top: 20px;
+
+/*BOOKPAGE*/
+.booking{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
     text-align: center;
-    font-size: xx-large;
-    color: var(--fourthGray);
+    font-size: x-large;
+    padding-bottom: 50px;
 }
+.booking summary{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 30px;
+    font-family: cursive;
+}
+.booking summary img{
+    width:40px;
+    height: 40px;
+    margin: 10px;
+}
+.booking p{
+    text-align: left;
+    max-width: 1200px;
+    font-size: 30px;
+    padding: 15px;
+}
+/*endbook*/
+
+
+/*Activitypage*/
+.activities1,
+.activities2,
+.activities3,
+.activities4{
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: cursive;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding:50px;
+
+
+}
+.allActivities summary{
+    padding-bottom: 30px;
+}
+.activities1 img,
+.activities2 img,
+.activities3 img,
+.activities4 img{
+    max-height: 200px;
+    max-width: 250px;
+
+    margin-bottom: 50px;
+}
+.imgBox{
+
+    display: flex;
+    gap:60px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*endActivitypage*/
+
+
+
+/*islandInfo*/
+.islandInfoBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    /*padding: 40px;*/
+}
+.islandInfoBody h2{
+    font-size: xx-large;
+    font-family: cursive;
+    text-decoration: underline;
+    padding-top: 50px;
+
+
+}
+.islandInfo p{
+    padding:10px;
+    font-size: 25px;
+    max-width: 1200px;
+    padding-bottom: 10px;
+}
+.ruleStuff h2{
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 5px solid black;
+    font-family: cursive;
+
+
+}
+.ruleStuff{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    gap: 150px;
+    margin: 0 auto;
+    padding-top:200px;
+}
+.ruleStuff p{
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+
+}
+.ruleStuff img{
+    max-width: 50px;
+    max-height: 50px;
+    padding: 10px;
+}
+.paying p{
+    border-bottom: 3px solid black;
+}
+.powerStuff img{
+    max-width: 100px;
+    max-height: 100px;
+    margin: auto;
+    display: block;
+}
+
+
+/*endislandInfo*/
