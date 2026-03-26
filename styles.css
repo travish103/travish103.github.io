@@ -8,7 +8,9 @@
 html{
     background-color: lightblue;
 }
-
+img{
+    border-radius: 15px;
+}
 /* navstuff */
 .mainNav ul {
     display: flex;
@@ -71,15 +73,18 @@ html{
     max-width: 1500px;
     margin: 0 auto;
     border-bottom: 10px solid rgba(240, 128, 128, 0.35);
+    border-radius: 15px;
 
 }
 .logo{
     font-size: 40px;
+    min-width:250px;
     height: 200px;
     width:300px;
     background-color: azure;
     margin-bottom: 20px;
     margin-top: 20px;
+    border-radius: 10px;
 }
 .welcometo{
     text-align: center;
@@ -92,6 +97,7 @@ html{
     font-family: cursive;
     padding: 30px;
     font-style: italic;
+    text-decoration: underline;
 }
 .islandlandscape{
     flex:1;
@@ -108,6 +114,7 @@ html{
     text-shadow: 2px 2px 2px black ;
     text-align: center;
     margin-top: 20px;
+    border-radius: 10px;
 }
 .islandlandscape p{
     min-width: 1000px;
@@ -152,6 +159,7 @@ html{
     height:200px;
     min-height:200px;
     object-fit: cover;
+    border-radius: 10px;
 }
 .actDescript{
     margin-top: auto;
@@ -165,6 +173,7 @@ html{
     min-height: 280px;
     object-fit: cover;
     display: block;
+    border-radius: 15px;
 
 }
 .activity1 img{
@@ -347,7 +356,7 @@ footer{
 .activities3 img,
 .activities4 img{
     max-height: 200px;
-    max-width: 250px;
+    max-width: 350px;
 
     margin-bottom: 50px;
 }
@@ -382,9 +391,12 @@ footer{
 }
 .islandInfo p{
     padding:10px;
-    font-size: 25px;
+    font-size: 27px;
     max-width: 1200px;
     padding-bottom: 10px;
+    /*display: list-item;*/
+
+
 }
 .ruleStuff h2{
     font-size: xx-large;
